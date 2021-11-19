@@ -34,18 +34,31 @@ public class Main {
             // Movie
                 // watch movie
                 watchMovie.watch(popper, lights, screen, projector, amp, dvd, dvdName);
+                // Spacing
+                    System.out.println("");
                 // stop watching movie
-                watchMovie.stopWatching(popper, lights, screen, projector, amp, dvd);
+                watchMovie.stopWatching(popper, lights, screen, projector, amp, dvd, dvdName);
+
+            // Spacing
+                System.out.println("");
 
             // Music
                 // listen music
                 listenMusic.listen(lights, amp, cd, cdName);
+                // Spacing
+                    System.out.println("");
                 // stop listening to music
-                listenMusic.stopListening(amp, cd);
+                listenMusic.stopListening(amp, cd, cdName);
+
+            // Spacing
+                System.out.println("");
+
             // Radio
                 // listen to radio
                 listenRadio.listen(tuner, amp, frequency);
+                // Spacing
+                    System.out.println("");
                 // stop listening to radio
-                listenRadio.stopListening(tuner, amp);
+                listenRadio.stopListening(tuner, amp, frequency);
     }
 }

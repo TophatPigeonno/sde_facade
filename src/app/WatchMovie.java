@@ -8,6 +8,7 @@ public class WatchMovie {
     }
 
     public void watch(PopcornPopper popper, TheaterLights lights, Screen screen, Projector projector, Amplifier amp, DvdPlayer dvd, String dvdName) {
+        System.out.println("Watch " + dvdName);
         this.watching = true;
 
         popper.on();
@@ -24,7 +25,8 @@ public class WatchMovie {
         dvd.play(dvdName);
     }
 
-    public void stopWatching(PopcornPopper popper, TheaterLights lights, Screen screen, Projector projector, Amplifier amp, DvdPlayer dvd) {
+    public void stopWatching(PopcornPopper popper, TheaterLights lights, Screen screen, Projector projector, Amplifier amp, DvdPlayer dvd, String dvdName) {
+        System.out.println("Stop watching " + dvdName);
         this.watching = false;
 
         popper.off();
