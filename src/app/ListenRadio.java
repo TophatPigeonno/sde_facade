@@ -15,10 +15,10 @@ public class ListenRadio {
 
         amp.on();
         amp.setVolume(5);
-        amp.setTuner();
+        amp.setTuner(tuner);
     }
 
-    public void stopListen(Tuner tuner, Amplifier amp) {
+    public void stopListening(Tuner tuner, Amplifier amp) {
         this.listeningRadio = false;
 
         tuner.off();
